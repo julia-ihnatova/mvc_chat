@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Enter a title, displayed at the top of the window.</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<!-- The information between the BODY and /BODY tags is displayed.-->
+<body>
+    <h1>the main heading</h1>
+    <ul id="users" class="users">
+        <li class="user">
+            <strong data-name></strong>
+        </li>
+    </ul>
+
+    <ul id="messages" class="messages">
+        <li class="message">
+            <div data-text></div>
+            <button data-delete type="button">Delete</button>
+        </li>
+    </ul>
+
+    <form id="new-message-form">
+        <input type="text" name="text">
+        <button>Send</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/models/messagesArray.js"></script>
+    <script type="text/javascript" src="js/chat/model/messages.js"></script>
+    <script type="text/javascript" src="js/chat/model/users.js"></script>
+    <script type="text/javascript" src="js/chat/view/messages.js"></script>
+    <script type="text/javascript" src="js/chat/view/new-message-form.js"></script>
+    <script type="text/javascript" src="js/chat/view/users.js"></script>
+    <script type="text/javascript" src="js/chat/controller/users.js"></script>
+    <script type="text/javascript" src="js/chat/controller/messages.js"></script>
+    <script type="text/javascript" src="js/chat/index.js"></script>
+</body>
+</html>
